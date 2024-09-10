@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.exemplo-overflow{
+    margin-bottom: 40px;
+}
+
+.container{
+    width: 300px;
+    height: 150px;
+    overflow:auto;
+    border: 2px solid #941010;
+    background-color: #ca0fae;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.content{
+    height: 200px;
+    background-color: #23b0df;
+    padding: 10px;
+}
+
+.float-left{
+    float: left;
+    width: 120px;
+    height: 120px;
+    background-color: #87cefa;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text{
+    overflow: hidden;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.example-opacity{
+    display: flex;
+    gap: 20px;
+}
+
+.opaque, .semi-transparente, .transparente{
+    width: 150px;
+    height: 100px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(219, 25, 229, 0.1);
+}
+
+.opaque{
+    opacity: 1;
+    background-color: #ff6347;
+}
+
+.semi-transparente{
+    opacity: 0.5;
+    background-color: #32cd32;
+}
+
+.transparente{
+    opacity: 0;
+    background-color: #00bfff;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: ponter;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropbtn:hover{
+    background-color: #e40bc4;
+}
+
+.dropdown-content{
+    position: absolute;
+    background-color: #4d07f0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+
+p{
+    color: rgb(199, 32, 6);
+    font-size: 16px;
+}
+
+.highlight{
+    color: rgb(197, 201, 197);
+}
+
+#special{
+    color: black;
+}

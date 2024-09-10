@@ -1,0 +1,276 @@
+/* Estilo básico para a página */
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    margin-top: 60px; /* Espaçamento para a barra de navegação fixa */
+}
+
+/* Estilo da caixa de texto */
+.caixa-texto {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilo dos botões */
+.botão {
+    display: flex;
+    align-items: center;
+    margin: 20px auto; /* Centraliza o botão horizontalmente */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botão:hover {
+    background-color: #0077cc;
+}
+
+/* Estilo da caixa de aviso */
+.caixa-aviso {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilo da seção de testemunhos */
+.testemunhos {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.testemunho-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.testemunho-citacao {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #00aaff;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.testemunho-nome {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo da seção de criadores */
+.criadores {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.criadores h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.criadores p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Estilo da tabela de informações */
+.tabela-info {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.tabela-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-info th, .tabela-info td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.tabela-info th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.tabela-info tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo do formulário de contato */
+.formulario-contato {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contato h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contato label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.formulario-contato input[type="text"],
+.formulario-contato input[type="email"],
+.formulario-contato textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.formulario-contato button.botao-contato {
+    align-self: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario-contato button.botao-contato:hover {
+    background-color: #0077cc;
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-imagem {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.modal-caption {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Centralização do botão de abrir modal */
+.button-container {
+    text-align: center;
+}

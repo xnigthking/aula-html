@@ -1,0 +1,42 @@
+body{
+   background: rgb(255, 255, 255) 
+}
+
+h1{
+    border-style: groove;
+    text-align: center;
+}
+
+div{
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    text-align: center;
+    background-color: rgb(12, 158, 210);
+}
+
+.espaço{
+    border: 1px solid black;
+    background-color: rgb(26, 255, 183);
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 20px;
+}
+
+.button{
+    margin-left: 33%;
+    background: green;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+}
+
+.button:hover{
+    background: blue;
+}

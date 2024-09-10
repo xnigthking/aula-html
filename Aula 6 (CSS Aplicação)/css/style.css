@@ -1,0 +1,29 @@
+/* css/style.css */
+
+/* Define o fundo da página como preto */
+body {
+    background-color: black;
+    color: white; /* Define a cor do texto padrão como branco */
+}
+
+/* Define o estilo para todos os elementos <h1> */
+h1 {
+    color: blue; /* Define a cor do texto dos <h1> como azul */
+    font-size: 36px; /* Define o tamanho da fonte dos <h1> como 36 pixels */
+}
+
+/* Define uma classe para <h1> com cor vermelha */
+h1.red {
+    color: red; /* Define a cor do texto dos <h1> com a classe "red" como vermelho */
+}
+
+/* Define uma classe para <h1> com cor aqua */
+h1.aqua {
+    color: aqua; /* Define a cor do texto dos <h1> com a classe "aqua" como aqua */
+}
+
+/* Define o estilo para todos os elementos <h2> */
+h2 {
+    color: yellow; /* Define a cor do texto dos <h2> como amarelo */
+    font-size: 24px; /* Define o tamanho da fonte dos <h2> como 24 pixels */
+}

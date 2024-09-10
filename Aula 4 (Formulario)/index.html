@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!-- Declara que o documento usa HTML5.-->
+<html lang="en"> <!--Inicia o documento HTML e define o idioma como inglês.-->
+<head> <!-- Contém metadados e informações de configuração da página.-->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva, ajustando-se ao tamanho da tela.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Instrui o navegador a usar o modo mais recente de renderização, evitando modos de compatibilidade antigos.-->
+    <meta name="description" content="Esse é meu primeiro site!"> <!--Fornece uma breve descrição da página, usada por motores de busca.-->
+    <meta name="keywords" content="front-end, html, css, javascript"> <!-- Lista palavras-chave relevantes para o conteúdo.-->
+    <meta name="author" content="Mirka Juliet"> <!-- Indica o autor da página.-->
+    <title>Document</title> <!-- Define o título da página, exibido na aba do navegador.-->
+</head>
+<body> <!-- Contém o conteúdo visível da página.-->
+
+<h1>Formulário</h1>
+
+<form> <!--Início do Formulário-->
+    <label for="campo_nome">Nome:</label>
+    <input id="campo_nome" type="text" placeholder="Digite seu nome aqui" required>
+
+    <br><br>
+
+    <label for="campo_email">Email:</label>
+    <input id="campo_email" type="email" placeholder="Digite o seu email" required>
+
+    <br><br>
+
+    <label for="campo_senha">Senha:</label>
+    <input id="campo_senha" type="password" placeholder="Digite uma senha" required>
+
+    <br><br>
+
+    <h2>Animal de Estimação</h2>
+
+    <input type="radio" id="dog" name="animal" value="cachorro">
+    <label for="dog">Cachorro</label>
+
+    <br><br>
+
+    <input type="radio" id="cat" name="animal" value="Gato">
+    <label for="cat">Gato</label>
+
+    <br><br>
+
+    <input type="radio" id="bird" name="animal" value="Passarinho">
+    <label for="bird">Passarinho</label>
+
+    <br><br>
+
+    <h2>O que você tem em casa?</h2>
+
+    <input id="item" type="checkbox" name="item" value="TV">
+    <label for="TV">TV</label><br><br>
+
+    <input id="item2" type="checkbox" name="item2" value="Geladeira">
+    <label for="Geladeira">Geladeira</label><br><br>
+
+    <input id="item3" type="checkbox" name="item3" value="Computador">
+    <label for="Computador">Computador</label>
+
+    <br><br>
+
+    <h2>Escolha uma cor:</h2>
+
+    <select>
+        <option selected disabled value="">Selecione uma cor</option>
+        <option value="vermelho">Vermelho</option>
+        <option value="azul">Azul</option>
+        <option value="amarelo">Amarelo</option>
+        <option value="verde">Verde</option>
+    </select>
+
+    <br><br><br>
+
+    <h2>Digite sua mensagem</h2>
+
+    <textarea name="mensagem" placeholder="Digite aqui sua mensagem" rows="15" cols="55">Um texto de exemplo</textarea>
+
+    <br><br>
+
+    <input type="submit" value="Enviar Formulário">
+
+    <button>Clique aqui</button>
+
+
+
+
+</form>
+
+</body>
+</html>

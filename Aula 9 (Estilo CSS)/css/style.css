@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+.teste{
+    max-width: 800px;
+    height: 250px;
+    background: cyan;
+}
+
+p{
+    color: black;
+    text-align: justify;
+    text-decoration: line-through;
+    text-transform:uppercase;
+    text-indent: 60px;
+    font-size: 30px;
+    font-style: oblique;
+    font-family: 'FAMILY_NAME';
+}

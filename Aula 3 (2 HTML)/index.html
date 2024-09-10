@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição da sua página aqui.">
+    <title>Document</title>
+    <style>
+        /* Estilo geral para o corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        /* Estilo para o cabeçalho da página */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        /* Estilo para parágrafos */
+        p {
+            padding: 0 20px;
+        }
+        /* Estilo para o contêiner da imagem com título */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        /* Estilo para a imagem dentro do contêiner */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc; /* Opcional: Adiciona uma borda fina em volta da imagem */
+            border-radius: 8px; /* Opcional: Arredonda as bordas da imagem */
+        }
+        /* Estilo para o título da imagem */
+        .image-container h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        /* Estilo para o contêiner do iframe */
+        .iframe-container {
+            width: 400px; /* Largura reduzida do iframe */
+            height: 300px; /* Altura reduzida do iframe */
+            border: 1px solid #ccc; /* Borda ao redor do iframe */
+            border-radius: 8px; /* Borda arredondada */
+            overflow: hidden; /* Esconde qualquer parte do iframe que ultrapasse a borda */
+            margin: 20px auto; /* Centraliza o iframe */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra para destaque */
+        }
+        /* Estilo para o iframe dentro do contêiner */
+        .iframe-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        /* Estilo para listas ordenadas e não ordenadas */
+        ol, ul {
+            padding-left: 20px; /* Adiciona um recuo à esquerda */
+        }
+        ol {
+            margin: 20px 0; /* Margem superior e inferior */
+        }
+        ul {
+            margin: 20px 0; /* Margem superior e inferior */
+        }
+        /* Estilo para tabelas */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Remove espaços entre as bordas das células */
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd; /* Borda das células */
+            padding: 8px; /* Espaçamento interno das células */
+            text-align: left; /* Alinhamento do texto à esquerda */
+        }
+        th {
+            background-color: #f4f4f4; /* Cor de fundo para o cabeçalho */
+        }
+        caption {
+            font-weight: bold; /* Negrito para o título da tabela */
+            margin: 10px 0; /* Margem acima e abaixo do título */
+        }
+        /* Estilo para o botão */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        /* Estilo para a imagem final da página */
+        .final-image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .final-image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc; /* Opcional: Adiciona uma borda fina em volta da imagem */
+            border-radius: 8px; /* Opcional: Arredonda as bordas da imagem */
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Título Principal da Página</h1>
+        <h2>Subtítulo da Página</h2>
+    </header>
+
+    <!-- Parágrafo introdutório -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ullam labore adipisci, vitae sit animi id deleniti ipsum libero perferendis. <strong>Optio asperiores porro voluptatibus blanditiis consequatur eveniet eaque assumenda repellat!</strong> <em>Ut voluptatibus sequi dolorum inventore perferendis.</em></p>
+    
+    <!-- Citação famosa -->
+    <blockquote>
+        <p>"O único modo de fazer um excelente trabalho é amar o que você faz."</p>
+        <cite>— Steve Jobs</cite>
+    </blockquote>
+
+    <!-- Links -->
+    <p>
+        <!-- Link para uma página externa -->
+        <a href="https://www.example.com" target="_blank" rel="noopener noreferrer">Visite Example.com</a>
+    </p>
+
+    <p>
+        <!-- Link para uma âncora na mesma página -->
+        <a href="#section2">Ir para Seção 2</a>
+    </p>
+
+    <!-- Imagem com título -->
+    <div class="image-container">
+        <h3>Nossa Criatividade</h3>
+        <!-- Caminho relativo para a imagem -->
+        <img src="imagem/senai1.jpg" alt="Imagem ilustrativa da criatividade">
+    </div>
+
+    <!-- Seção com âncora -->
+    <h2 id="section2">Seção 2</h2>
+    <p>Esta é a Seção 2 da página. Aqui você encontrará informações adicionais sobre o tópico.</p>
+
+    <!-- Incorporar outro HTML -->
+    <div class="iframe-container">
+        <iframe src="pagina2.html" title="Página de Contato"></iframe>
+    </div>
+
+    <!-- Tabela -->
+    <table>
+        <caption>Tabela Exemplo</caption>
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dado 1.1</td>
+                <td>Dado 1.2</td>
+            </tr>
+            <tr>
+                <td>Dado 2.1</td>
+                <td>Dado 2.2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Rodapé da Tabela</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Lista Ordenada -->
+    <h3>Lista Ordenada</h3>
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+
+    <!-- Lista Não Ordenada -->
+    <h3>Lista Não Ordenada</h3>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <!-- Imagem final para concluir a página -->
+    <div class="final-image-container">
+        <img src="imagem/senai2.jpg" alt="Imagem final para conclusão da página">
+        <p>Obrigado por Participar</p>
+    </div>
+</body>
+</html>
