@@ -1,0 +1,74 @@
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Estilo do cabeçalho em telas menores */
+    header {
+        flex-direction: column; /* Muda a direção do layout para coluna */
+        align-items: flex-start; /* Alinha itens à esquerda */
+    }
+
+    /* Menu à esquerda em telas menores */
+    .menu-left {
+        flex-direction: column; /* Organiza os itens do menu em coluna */
+        gap: 10px; /* Espaçamento entre os itens do menu */
+    }
+
+    /* Menu à direita (ícones sociais) em telas menores */
+    .menu-right {
+        position: fixed; /* Fixa a posição do menu */
+        bottom: 20px; /* Mantém ícones sociais visíveis */
+        right: 20px; /* Alinha à direita da tela */
+        flex-direction: column; /* Organiza os ícones em coluna */
+    }
+
+    /* Botão de alternância de som */
+    #toggleSound {
+        bottom: 70px; /* Ajusta a posição acima dos ícones sociais */
+    }
+
+    /* Seção Sobre e Personagens em telas menores */
+    #sobre-personagens {
+        flex-direction: column; /* Organiza conteúdo em coluna */
+        align-items: center; /* Centraliza o conteúdo */
+        padding: 20px; /* Adiciona padding para melhor espaçamento */
+    }
+
+    /* Configuração de largura máxima para seções */
+    #info, #personagens {
+        max-width: 100%; /* Utiliza a largura total em telas menores */
+    }
+
+    /* Estilo da seção de personagens */
+    #personagens {
+        justify-content: center; /* Centraliza os personagens */
+        margin-top: 20px; /* Espaço acima da seção */
+        flex-direction: column; /* Empilha personagens verticalmente */
+        padding: 0 10px; /* Adiciona padding para evitar proximidade das bordas */
+    }
+
+    /* Estilo das imagens dos personagens */
+    .personagem img {
+        max-height: 180px; /* Limita a altura para telas menores */
+        transform: scale(0.7); /* Reduz a escala para melhor ajuste */
+    }
+
+    /* Estilo dos botões na seção Sobre */
+    .botoes {
+        flex-direction: column; /* Empilha botões em coluna */
+        align-items: center; /* Centraliza botões */
+        margin-top: 20px; /* Adiciona espaço acima dos botões */
+    }
+
+    /* Estilo para links dos botões */
+    .botoes a {
+        width: 100%; /* Largura total para alvos de toque */
+        text-align: center; /* Centraliza texto dentro dos botões */
+        margin-bottom: 10px; /* Espaço entre botões */
+        padding: 10px; /* Adiciona padding para melhor alvo de toque */
+    }
+
+    /* Estilo do container do logo Flash 2 */
+    #flash2-logo-container {
+        top: -20px; /* Ajusta a posição vertical */
+        width: 70%; /* Garante largura responsiva */
+    }
+}

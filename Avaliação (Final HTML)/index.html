@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Em 'The Flash', Barry Allen volta no tempo para corrigir um erro, mas cria um novo caos no multiverso.">
+    <title>The Flash</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css"> <!-- Adiciona o arquivo de responsividade -->
+</head>
+<body>
+
+    <!-- Fundo de Vídeo -->
+    <section id="fundo" role="banner">
+        <video id="videoFundo" src="video/fundo.mp4" autoplay loop muted preload="auto" aria-label="Vídeo de fundo"></video>
+    </section>
+
+    <!-- Controle de Som -->
+    <div id="soundControl" class="sound-control" role="button" aria-label="Ativar/Desativar Som">
+        <button id="toggleSound" class="sound-btn" aria-pressed="false">🔊</button>
+    </div>
+
+    <!-- Menu Principal -->
+    <header role="navigation">
+        <div class="logo-menu">
+            <a href="#home" id="toggleMenu" role="button" aria-label="Ir para a página inicial">
+                <img src="imagens/flash-logo.png" alt="Flash Logo" class="flash-logo">
+            </a>
+            <nav class="menu-left" aria-label="Navegação principal">
+                <a href="#home">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#personagens">Personagens</a>
+                <a href="#trailerModal" class="btn" id="openTrailerModal">Trailer</a>
+            </nav>
+        </div>
+        <div class="menu-right" aria-label="Links de redes sociais">
+            <a href="travel.trade@warnerbros.com" aria-label="Enviar Email"><img src="imagens/email-logo.png" alt="Enviar Email"></a>
+            <a href="https://www.instagram.com/dctheflash/" aria-label="Instagram"><img src="imagens/insta-logo.png" alt="Instagram"></a>
+            <a href="https://web.whatsapp.com/send?phone=5514998451022" aria-label="WhatsApp"><img src="imagens/what-logo.png" alt="WhatsApp"></a>
+            <a href="https://twitter.com/wbpictures" aria-label="Twitter"><img src="imagens/x-logo.png" alt="Twitter"></a>
+            <a href="https://www.youtube.com/WarnerBrosPictures" aria-label="YouTube"><img src="imagens/yt-logo.png" alt="YouTube"></a>
+        </div>
+    </header>
+
+    <!-- Seção Sobre e Personagens -->
+    <section id="sobre-personagens" role="region" aria-label="Sobre os Personagens">
+        <div id="info">
+            <div class="botoes">
+                <a href="#trailerModal" class="btn" id="openTrailerModal">Assista ao Trailer</a>
+                <a href="#ingresso" class="btn">Compre Seu Ingresso</a>
+            </div>
+            <p>Em "The Flash", Barry Allen volta no tempo para corrigir um erro, mas cria um novo caos no multiverso.</p>
+            <img src="imagens/warner-logo.png" alt="Warner Bros" class="info-logo warner-logo" loading="lazy">
+            <p>A DC e a Warner Bros são líderes em entretenimento...</p>
+        </div>
+    </section>
+    
+    <!-- Seção Personagens -->
+    <section id="personagens" role="region" aria-label="Personagens">
+        <div class="personagem" role="figure">
+            <img src="imagens/batman-hero.png" alt="Batman" loading="lazy">
+        </div>
+        <div class="personagem" role="figure">
+            <img src="imagens/flash-hero.png" alt="Flash" loading="lazy">
+            <div id="flash2-logo-container" role="img" aria-label="Logo Flash 2">
+                <img src="imagens/flash2-logo.png" alt="Logo Flash 2" class="info-logo" loading="lazy">
+            </div>
+        </div>
+        <div class="personagem" role="figure">
+            <img src="imagens/girl-hero.png" alt="Heroína" loading="lazy">
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="trailerModal" class="modal" role="dialog" aria-labelledby="trailerModalLabel" aria-hidden="true">
+        <div class="modal-content">
+            <button class="close" aria-label="Fechar">&times;</button>
+            <video src="video/trailer.mp4" controls aria-label="Trailer do filme"></video>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="footer">
+        <p>&copy; 2024 Todos os direitos reservados</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

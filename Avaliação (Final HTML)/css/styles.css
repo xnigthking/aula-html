@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Estilos Globais */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Inclui preenchimento e bordas nas dimensões */
+}
+
+html, body {
+    height: 100%; /* Define altura total para html e body */
+    font-family: 'Roboto', sans-serif; /* Define a fonte padrão */
+    overflow: hidden; /* Evita rolagem */
+    color: #ffffff; /* Cor do texto padrão */
+}
+
+/* Vídeo de Fundo */
+#fundo {
+    position: fixed; /* Fixa o vídeo de fundo na tela */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: hidden; /* Oculta qualquer excesso */
+    z-index: -1; /* Coloca atrás de outros elementos */
+}
+
+#fundo video {
+    width: 100%; /* Largura total do vídeo */
+    height: 100%; /* Altura total do vídeo */
+    object-fit: cover; /* Cobre todo o espaço mantendo a proporção */
+}
+
+/* Botão de Alternância de Som */
+#toggleSound {
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    padding: 10px; /* Preenchimento interno */
+    border-radius: 50%; /* Botão redondo */
+    cursor: pointer; /* Cursor em forma de mão */
+    z-index: 1001; /* Acima de outros elementos */
+    font-size: 20px; /* Tamanho do texto */
+    transition: background-color 0.3s; /* Transição suave na cor de fundo */
+}
+
+#toggleSound:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor ao passar o mouse */
+}
+
+/* Cabeçalho */
+header {
+    position: fixed; /* Fixa o cabeçalho na parte superior */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total */
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: space-between; /* Espaço entre itens */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px 20px; /* Preenchimento interno */
+    background: transparent; /* Fundo transparente */
+    z-index: 1000; /* Acima de outros elementos */
+}
+
+/* Estilos de Logo e Menu */
+.logo-menu {
+    display: flex; /* Utiliza flexbox para layout */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.flash-logo {
+    height: 40px; /* Altura do logo */
+}
+
+.menu-left, .menu-right {
+    display: flex; /* Utiliza flexbox para layout */
+}
+
+.menu-left {
+    gap: 20px; /* Espaçamento entre os itens do menu */
+    margin-left: 10px; /* Margem à esquerda */
+}
+
+.menu-left a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+.menu-left a:hover {
+    color: #ff9800; /* Cor ao passar o mouse */
+}
+
+.menu-right {
+    gap: 10px; /* Espaçamento entre ícones sociais */
+}
+
+.menu-right img {
+    height: 30px; /* Altura dos ícones sociais */
+    width: auto; /* Mantém a proporção */
+}
+
+/* Seção Sobre os Personagens */
+#sobre-personagens {
+    position: fixed; /* Fixa a seção na parte inferior */
+    bottom: 90px; /* Distância do fundo */
+    left: -15%; /* Ajuste à esquerda */
+    width: 80%; /* Largura total */
+    padding: 80px; /* Preenchimento interno */
+    border-radius: 100px; /* Bordas arredondadas */
+    z-index: 1000; /* Acima de outros elementos */
+    display: flex; /* Utiliza flexbox para layout */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Alinhamento de texto ao centro */
+    background: rgba(0, 0, 0, 0); /* Fundo transparente */
+}
+
+#info {
+    margin: 0; /* Remove margens */
+}
+
+.info-logo {
+    max-width: 100px; /* Largura máxima do logo */
+    margin: 10px 0; /* Margens acima e abaixo */
+}
+
+.botoes {
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 10px; /* Espaçamento entre botões */
+    margin-bottom: 20px; /* Espaço abaixo dos botões */
+}
+
+.botoes a {
+    background-color: transparent; /* Fundo transparente */
+    color: #ff9800; /* Cor do texto */
+    border: 2px solid #ff9800; /* Borda colorida */
+    padding: 10px 20px; /* Preenchimento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-decoration: none; /* Remove sublinhado */
+    transition: background-color 0.3s, color 0.3s; /* Transições suaves */
+}
+
+.botoes a:hover {
+    background-color: #ff9800; /* Cor ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Layout dos Personagens */
+#personagens {
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: flex-end; /* Alinha personagens à direita */
+    align-items: flex-end; /* Alinha personagens na parte inferior */
+    gap: 50px; /* Espaço entre personagens */
+    position: fixed; /* Fixa a posição dos personagens */
+    bottom: 150px; /* Distância da parte inferior */
+    right: 5%; /* Ajuste à direita */
+    width: 40%; /* Largura total */
+    z-index: 1000; /* Acima de outros elementos */
+    padding: 40px 20px; /* Preenchendo para espaçamento */
+}
+
+.personagem {
+    display: flex; /* Utiliza flexbox para layout */
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.personagem img {
+    max-height: 300px; /* Altura máxima para imagens de personagens */
+    width: auto; /* Mantém a proporção */
+    transform: scale(1.6); /* Ajusta a escala da imagem */
+}
+
+/* Contêiner do Logo Flash2 */
+#flash2-logo-container {
+    position: absolute; /* Posição absoluta para controle */
+    top: 380px; /* Ajustado para melhor visibilidade */
+    left: -53%; /* Centraliza o contêiner */
+    transform: translateX(-50%); /* Correção de alinhamento central */
+    width: 60%; /* Aumenta a largura para um contêiner maior */
+}
+
+#flash2-logo-container img {
+    width: 100%; /* Torna a imagem responsiva */
+    height: auto; /* Mantém a proporção */
+    max-height: 600px; /* Aumenta a altura máxima para melhor visibilidade */
+}
+
+/* Modal */
+.modal {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fixa na tela */
+    z-index: 1000; /* Acima de outros elementos */
+    left: 0; /* Alinha à esquerda */
+    top: 0; /* Alinha ao topo */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
+}
+
+.modal-content {
+    position: absolute; /* Posição absoluta para centralizar */
+    top: 50%; /* Alinha ao centro verticalmente */
+    left: 50%; /* Alinha ao centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza completamente */
+    width: 90%; /* Largura da modal */
+    max-width: 800px; /* Largura máxima */
+    background: #000; /* Fundo preto */
+    border: 1px solid #ff9800; /* Borda colorida */
+    padding: 0; /* Remove preenchimento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    overflow: hidden; /* Oculta excesso de conteúdo */
+}
+
+.modal-content video {
+    width: 100%; /* Largura total do vídeo */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Exibe como bloco */
+}
+
+.close {
+    position: absolute; /* Posição absoluta para controle */
+    top: 10px; /* Distância do topo */
+    right: 15px; /* Distância da direita */
+    color: #ff9800; /* Cor do botão de fechar */
+    font-size: 28px; /* Tamanho da fonte */
+    font-weight: bold; /* Peso da fonte */
+    cursor: pointer; /* Cursor em forma de mão */
+    z-index: 1001; /* Acima de outros elementos */
+}
+
+.close:hover,
+.close:focus {
+    color: #e67e22; /* Cor ao passar o mouse ou focar */
+}
+
+/* Rodapé */
+#footer {
+    position: fixed; /* Fixa o rodapé */
+    bottom: 10px; /* Distância do fundo */
+    left: 50%; /* Alinha ao centro */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    font-size: 12px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinhamento de texto ao centro */
+    z-index: 1001; /* Acima de outros elementos */
+}
