@@ -1,0 +1,13 @@
+body{
+    padding-top: 56px;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.toast {
+    z-index: 1050;
+}
