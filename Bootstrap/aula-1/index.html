@@ -13,7 +13,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
     <script src="js/script.js"></script>
 
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Marketplace</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="colapse" data-bs-target="#navbarNav" arial-expanded="false" arial-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,10 +39,10 @@
                         <a class="nav-link" href="#contato">Contato</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Mais
                         </a>
-                        <ul class="dropdown-menu" aria-labbelledby="navbarDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#faq">FAQ</a></li>
                             <li><a class="dropdown-item" href="#termos">Termos de Serviço</a></li>
                         </ul>
@@ -60,7 +60,6 @@
     </nav>
 
     <div class="container mt-4" id="produtos">
-
         <div id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -122,10 +121,12 @@
         <h2>Tabela de Produtos</h2>
         <table class="table table-striped">
             <thead>
-                <th scope="col">#</th>
-                <th scope="col">Produto</th>
-                <th scope="col">Preço</th>
-                <th scope="col">Ação</th>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Ação</th>
+                </tr>
             </thead>
             <tbody>
                 <tr>
@@ -138,13 +139,13 @@
                     <th scope="row">2</th>
                     <td>Produto 2</td>
                     <td>R$ 20,00</td>
-                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto1">Comprar</button></td>
+                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto2">Comprar</button></td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
                     <td>Produto 3</td>
                     <td>R$ 30,00</td>
-                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto1">Comprar</button></td>
+                    <td><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto3">Comprar</button></td>
                 </tr>
             </tbody>
         </table>
@@ -165,7 +166,7 @@
             </div>
 
             <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
+                <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         Como comprar um produto?
                     </button>
@@ -189,6 +190,105 @@
                 </div>
             </div>
         </div>
+
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+        <div class="modal fade" id="modalProduto1" tabindex="-1" aria-labelledby="modalProduto1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto1Label">Produto 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Detalhes sobre o Produto 1.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto2" tabindex="-1" aria-labelledby="modalProduto2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto2Label">Produto 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Detalhes sobre o Produto 2.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalProduto3" tabindex="-1" aria-labelledby="modalProduto3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProduto3Label">Produto 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Detalhes sobre o Produto 3.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Carregando...</span>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <footer class="bg-light text-center text-lg-start mt-4">
+            <div class="text-center p-3">
+                2024 - Meu Marketplace. Todos os direitos reservados.
+            </div>
+        </footer>
     </div>
 </body>
 </html>
